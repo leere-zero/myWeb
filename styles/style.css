@@ -1,0 +1,346 @@
+
+
+
+/* ---Главная страница--- */
+
+/* Шапка */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1440px;
+    height: 100px;
+}
+.header_logo {
+    width: 255px;
+
+    display: flex;
+    justify-content: center;
+}
+.header_logo_0 {
+    width: 255px;
+    opacity: 0;
+}
+nav {
+    display: flex;
+
+    gap: 90px;
+
+    margin-top: 40px;
+}
+.menu {
+    display: none;
+    align-self: center;
+
+    width: 80px;
+    height: 80px;
+
+    background: none;
+    border-style: hidden;
+
+    margin-right: 50px;
+}
+.menu_image {
+    width: 80px;
+}
+#menu_popover {
+    width: 300px;
+    height: 350px;
+
+    background-color: white;
+
+    border-radius: 0 0 30px 0;
+
+    box-shadow:4px 4px 40px 0px black;
+}
+
+
+/* Секции */
+section {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Главная */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 848px;
+
+    background-image: url(/images/main_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Карточки */
+.section_main-cards {
+    z-index: 1;
+
+    box-shadow: 0px 0px 40px 60px rgba(255, 255, 255, 1);
+}
+.section_main-cards_content {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1260px;
+    height: 100%;
+}
+.line_1, .line_2, .line_3 {
+    width: 341px;
+    height: 2px;
+
+    background-color: #151B3F;
+
+    margin-top: 5px;
+    margin-left: 50px;
+}
+h2 {
+    padding-left: 50px;
+}
+.section_main-cards_content_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;                 
+    align-self: center;
+
+    
+    gap: 30px;
+
+    margin-top: 35px;
+
+    padding: 0 50px 190px 50px;
+}
+.main-card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+.card_title {
+    width: 267px;
+}
+.card_text,.card_text_1 {
+    width: 267px;
+
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/* Самые качественные инструменты... */
+.section_previem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    background-image: url(/images/previem_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding-bottom: 100px;
+}
+h3 {
+    margin-top: 90px;
+}
+.red_text {
+    color: #EE4F51;
+}
+.previem_title {
+    max-width: 962px;
+    width: 100%;
+
+    color: white;
+
+    font-size: 40px;
+    font-weight: normal;
+
+    margin-top: 40px;
+}
+.previem_text {
+    max-width: 962px;
+    width: 100%;
+
+    color: white;
+
+    font-size: 24px;
+    font-weight: normal;
+
+    line-height: 28px;
+
+    margin-top: 50px;
+}
+
+
+/* Интрументы, оборудование */
+.section_instruments {
+    box-shadow: 0px 0px 40px 60px rgba(255, 255, 255, 1);
+}
+.section_instruments_title {
+    color: #151B3F;
+
+    margin-top: 50px;
+}
+.section_instruments_cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 60px;
+    column-gap: 30px;
+
+    width: 100%;
+    max-width: 1160px;
+
+    margin-top: 150px;
+}
+.card_text_1 {
+    width: 168px;
+    height: 28px;
+
+    text-align: center;
+
+    line-height: 14px;
+}
+
+
+/* Подвал */
+footer {
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 1160px;
+    height: 150px;
+}
+.line,.line_header {
+    width: 100%;
+    height: 2px;
+
+    background-color: #151B3F;
+
+    margin-top: 150px;
+}
+.line_header {
+    margin: 0;
+}
+.footer_logo {
+    width: 255px;
+    height: 46px;
+    
+    margin-top: 20px;
+}
+.footer_nav {
+    display: flex;
+    flex-direction: column;
+
+    width: 367px;
+
+    gap: 11px;
+
+    margin-top: 20px;
+}
+
+
+
+/* ---Каталог--- */
+
+/* Строй материалы/Инструменты */
+.section_materials_cards-container {
+    max-width: 1160px;
+    width: 100%;
+}
+.section_materials_cards-container_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 70px;
+    column-gap: 100px;
+
+    margin-top: 50px;
+}
+.section_materials_card_title {
+    width: 168px;
+    height: 84px;
+    
+    text-align: center;
+}
+.line_2 {
+    width: 267px;
+    height: 2px;
+
+    background-color: #151B3F;
+
+    margin-top: 5px;
+}
+.line_3 {
+    width: 177px;
+    height: 2px;
+
+    background-color: #151B3F;
+
+    margin-top: 5px;
+}
+
+
+
+/* Медиа-запросы */
+@media (max-width: 1024px) {
+    .header_logo_0 {
+        display: none;
+    }
+    nav {
+        padding-right: 50px;
+    }
+    .header_logo, .footer_logo {
+        padding-left: 50px;
+    }
+    .section_main-cards_content_container {
+        max-width: 600px;
+    }
+    .previem_text, .previem_title {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+    .menu_nav {
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 50px;
+    }
+    .menu {
+        display: flex;
+    }
+    h1, h3 {
+        font-size: 70px;
+    }
+    .footer_nav {
+        gap: 40px;
+    }
+}
