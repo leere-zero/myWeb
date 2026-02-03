@@ -151,7 +151,7 @@ h2 {
 
     width: 100%;
 
-    background-image: url(/images/previem_background.jpg);
+    background-image: url(./images/previem_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -345,5 +345,6 @@ footer {
     }
 
 }
+
 
 
