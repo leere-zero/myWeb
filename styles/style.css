@@ -22,10 +22,14 @@ header {
 
     display: flex;
     justify-content: center;
+
+    padding-left: 50px;
 }
 .header_logo_0 {
     width: 255px;
     opacity: 0;
+
+    padding-right: 50px;
 }
 nav {
     display: flex;
@@ -33,6 +37,8 @@ nav {
     gap: 90px;
 
     margin-top: 40px;
+
+    padding-left: 50px;
 }
 .menu {
     display: none;
@@ -56,8 +62,6 @@ nav {
     background-color: white;
 
     border-radius: 0 0 30px 0;
-
-    box-shadow:4px 4px 40px 0px black;
 }
 
 
@@ -249,6 +253,8 @@ footer {
     height: 46px;
     
     margin-top: 20px;
+
+    padding-left: 50px;
 }
 .footer_nav {
     display: flex;
@@ -280,11 +286,18 @@ footer {
 
     margin-top: 50px;
 }
-.section_materials_card_title {
+.section_materials_card_title, .catalog_popover_content_card_title {
     width: 168px;
     height: 84px;
     
     text-align: center;
+}
+.section_materials_card {
+    border: none;
+
+    background: none;
+
+    padding: 0;
 }
 .line_2 {
     width: 267px;
@@ -302,6 +315,34 @@ footer {
 
     margin-top: 5px;
 }
+#catalog_popover {
+    width: 710px;
+    height: 900px;
+
+    position: fixed !important;
+
+    margin: auto;
+
+    border-radius: 30px;
+}
+.catalog_popover_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin: 30px;
+}
+.catalog_popover_content_card {
+    width: 300px;
+    height: 418px;
+}
+.catalog_popover_content_card_title {
+    width: 300px;
+    height: 56px;
+}
+[popover]::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -313,14 +354,14 @@ footer {
     nav {
         padding-right: 50px;
     }
-    .header_logo, .footer_logo {
-        padding-left: 50px;
-    }
     .section_main-cards_content_container {
         max-width: 600px;
     }
     .previem_text, .previem_title {
         width: 90%;
+    }
+    nav {
+        gap: 50px;
     }
 }
 
@@ -333,6 +374,8 @@ footer {
         flex-direction: column;
 
         margin-left: 50px;
+
+        gap: 90px;
     }
     .menu {
         display: flex;
@@ -343,10 +386,4 @@ footer {
     .footer_nav {
         gap: 40px;
     }
-
 }
-
-
-
-
-
